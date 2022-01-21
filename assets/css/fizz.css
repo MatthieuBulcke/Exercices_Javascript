@@ -1,0 +1,80 @@
+.cardSection article.fizz,.cardSection article.buzz{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    cursor: default;
+    overflow: auto;
+    height: 41em;
+    padding: 3em 0 0 0;
+}
+.fizz p,.buzz p,.legend p{
+    margin:.1em 1em;
+    border-radius: 10px;
+    padding:1em;
+    width: 1em;
+}
+p.fizzed{
+    animation: 1s fizzGlow infinite;
+    background-color: firebrick;
+}
+p.buzzed{
+    animation: 1s buzzGlow infinite;
+    background-color: burlywood;
+}
+p.both{
+    animation: 1s glow infinite;
+    background-color: blueviolet;
+}
+@keyframes fizzGlow{
+    50%{
+        background-color: coral;
+    }
+}
+@keyframes buzzGlow{
+    50%{
+        background-color: lavender;
+    }
+}
+@keyframes glow{
+    50%{
+        background-color: magenta;
+    }
+}
+/*FizzBuzz + +*/
+.hide{
+    display: none;
+}
+.cardSection article.buzz{
+    overflow: hidden;
+} 
+.buzz span{
+    background-color: lightgray;
+    width: 3em;
+    height: 5em;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.buzz span:hover{
+    animation: 2s fizzGlow infinite;
+}
+.buzz span.previous{
+    left:0;
+    border-radius: 0 2em 2em 0;
+}
+.buzz span.next{
+    right:0;
+    border-radius: 2em 0 0 2em;
+}
+.buzz span i{
+    margin: 65% 0;
+}
+.buzz p{
+    width: 100%;
+    font-size: 6em;
+    margin: 2em;
+}
+.legend p{
+    width: 50%;
+    margin: 2em auto;
+}

@@ -27,10 +27,10 @@ function getTime(){
  * Function that will launch music
  */
 function audio(){
-    let audio = new Audio('./assets/audio/MI2.mp3');
-    audio.volume = .5;
-    audio.loop = true;
-    audio.play();
+    let music = new Audio('./assets/audio/MI2.mp3');
+    music.volume = .5;
+    music.loop = true;
+    music.play();
 }
 /**
  * Function that create an element and call audio & getTime functions
@@ -41,7 +41,7 @@ function generateHorloge(){
     title[0].innerHTML = 'Horloge';
     sections[0].innerHTML+="<article class='horloge'>";
     getTime();
-    setInterval(() => {
+    let interval = setInterval(() => {
         getTime();
     }, 1000);
 }

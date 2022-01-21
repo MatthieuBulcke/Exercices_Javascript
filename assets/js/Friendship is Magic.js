@@ -13,7 +13,7 @@ function generatePonys(){
         lists[0].innerHTML+=`
             <li class='pony'>
                 <figure>
-                    <img src='./assets/img/ponys/${ponys[i]}.png'>
+                    <img src='./assets/img/ponys/${ponys[i]}.png' alt='${ponys[i]}'>
                     <figcaption>${ponys[i]}</figcaption>
                 </figure>
             </li>

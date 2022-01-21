@@ -7,8 +7,11 @@ console.log(articles)
 function emptyContent() {
     sections[0].innerHTML = '';
 }
-
+/**
+ * Function that reset content of html
+ */
 function resetContent() {
+    body[0].classList.remove('rainbow');
     emptyContent();
     title[0].innerHTML = 'Exercices_Javascript';
     sections[0].innerHTML = `<article class="rainbow">
@@ -30,6 +33,8 @@ function resetContent() {
     `;
     articles[0].addEventListener('click',generatePonys);
     articles[1].addEventListener('click',generateHorloge);
+    articles[2].addEventListener('click',generateFizz);
+    articles[3].addEventListener('click',generateBuzz);
 }
 
 /*Domcontent Loaded/Events Listeners*/

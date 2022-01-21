@@ -3,7 +3,7 @@ article.horloge{
     background: url('../img/TNT.png');
     background-size: cover;
     background-repeat: round;
-    height:40vh;
+    height:60vh;
     width:50%;
 }
 article.horloge p{
