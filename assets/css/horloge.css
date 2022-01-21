@@ -9,10 +9,10 @@ article.horloge{
 article.horloge p{
     animation:.5s clock infinite;
     background: rgba(0, 255, 42, 0.2);
-    width:20%;
-    margin:35% auto;
+    margin:4em auto;
     padding:1em;
     border-radius: 10px;
+    font-size:4em;
 }
 @keyframes clock{
     50%{

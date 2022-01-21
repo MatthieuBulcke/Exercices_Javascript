@@ -32,7 +32,7 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: royalblue;
+    background-color: rgb(12 100 217 / 50%);
     padding: 2em 0;
 }
 /*cardsSection*/

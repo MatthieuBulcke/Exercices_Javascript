@@ -1,6 +1,11 @@
+
 /*Décarations Variables*/
 
 /*Fonctions*/
+
+/**
+ * Function that get actual datetime and display it.
+ */
 function getTime(){
     let horloge = document.getElementsByClassName('horloge');
     let now = new Date();
@@ -18,9 +23,21 @@ function getTime(){
     }
     horloge[0].innerHTML = `<p>${h}:${m}:${s}</p>`;
 }
-
+/**
+ * Function that will launch music
+ */
+function audio(){
+    let audio = new Audio('./assets/audio/MI2.mp3');
+    audio.volume = .5;
+    audio.loop = true;
+    audio.play();
+}
+/**
+ * Function that create an element and call audio & getTime functions
+ */
 function generateHorloge(){
     emptyContent();
+    audio();
     title[0].innerHTML = 'Horloge';
     sections[0].innerHTML+="<article class='horloge'>";
     getTime();
