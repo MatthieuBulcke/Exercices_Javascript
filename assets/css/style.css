@@ -22,6 +22,9 @@ h1{
 ul{
     display: flex;
     list-style:none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
 }
 footer{
     display: flex;
@@ -41,7 +44,6 @@ footer{
     padding: 1.5em 0px;
 }
 .cardSection article{
-    border: 1px solid green;
     margin: 1em auto;
     width: 40%;
     border-radius: 1em;
@@ -61,6 +63,23 @@ footer{
     color: white;
     background: #783acb85;
     border-radius: 0 0 4em 4em;
+}
+/*Ponys*/
+.pony{
+    width: 20%;
+}
+.pony figure{
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 2em;
+    width: max-content;
+    margin: 1em auto;
+    color:white;
+    padding:.5em;
+}
+.pony img{
+    border-radius: 2em;
+    width: 10em;
+    height: 10em;
 }
 /*Rainbow*/
 .rainbow{
