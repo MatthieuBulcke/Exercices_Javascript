@@ -1,0 +1,21 @@
+article.horloge{
+    color:white;
+    background: url('../img/TNT.png');
+    background-size: cover;
+    background-repeat: round;
+    height:40vh;
+    width:50%;
+}
+article.horloge p{
+    animation:.5s clock infinite;
+    background: rgba(0, 255, 42, 0.2);
+    width:20%;
+    margin:35% auto;
+    padding:1em;
+    border-radius: 10px;
+}
+@keyframes clock{
+    50%{
+        color:crimson;
+    }
+}

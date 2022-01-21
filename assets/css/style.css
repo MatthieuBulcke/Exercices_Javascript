@@ -64,32 +64,3 @@ footer{
     background: #783acb85;
     border-radius: 0 0 4em 4em;
 }
-/*Ponys*/
-.pony{
-    width: 20%;
-}
-.pony figure{
-    background-color: rgba(0, 255, 255, 0.5);
-    border-radius: 2em;
-    width: max-content;
-    margin: 1em auto;
-    color:white;
-    padding:.5em;
-}
-.pony img{
-    border-radius: 2em;
-    width: 10em;
-    height: 10em;
-}
-/*Rainbow*/
-.rainbow{
-    animation: animation 40s linear infinite;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    background: linear-gradient(rgba(195, 34, 34, 1) 0%, rgba(195, 34, 83, 1) 5%, rgba(195, 34, 121, 1) 11%, rgba(195, 34, 189, 1) 17%, rgba(155, 34, 195, 1) 23%, rgba(96, 34, 195, 1) 28%, rgba(34, 43, 195, 1) 34%, rgba(34, 92, 195, 1) 40%, rgba(34, 151, 195, 1) 45%, rgba(34, 195, 174, 1) 51%, rgba(34, 195, 104, 1) 57%, rgba(46, 195, 34, 1) 62%, rgba(105, 195, 34, 1) 68%, rgba(165, 195, 34, 1) 73%, rgba(195, 182, 34, 1) 79%, rgba(195, 144, 34, 1) 85%, rgba(195, 109, 34, 1) 93%, rgba(195, 34, 34, 1) 100%);
-}
-@keyframes animation {
-    100% {
-        background-position: 0px -3000px;
-    }
-}
