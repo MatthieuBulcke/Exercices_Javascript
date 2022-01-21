@@ -3,6 +3,9 @@ let ponys = ['Twilight Sparkle','Rarity','Fluttershy','Rainbow Dash','Pinkie Pie
 let body = document.getElementsByTagName('body');
 /*Fonctions*/
 
+/**
+ * Function that create figure with an image for each ponys in the array ponys
+ */
 function generatePonys(){
     emptyContent();
     body[0].classList.add('rainbow');

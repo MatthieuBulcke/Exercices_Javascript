@@ -3,6 +3,9 @@ let index = 0;
 
 
 /*Fonctions*/
+/**
+ * Function tha create a table with 100 numbers where multiple of 3 are fizz / multiple of 5 are buzz and multiple of both are fizzbuzz
+ */
 function generateFizz(){
     emptyContent();
     title[0].innerHTML = 'Fizz';
@@ -24,7 +27,9 @@ function generateFizz(){
     }
     generateLegend();
 }
-
+/**
+ * Same function as generateFizz but hide every but one number
+ */
 function generateBuzz(){
     emptyContent();
     title[0].innerHTML = 'FizzBuzz + +';
@@ -51,6 +56,9 @@ function generateBuzz(){
     generateLegend();
     activateCarousel();
 }
+/**
+ * Function that build legend to see if the number is fizz buzz or fizzbuzz
+ */
 function generateLegend(){
     sections[0].innerHTML+="<article class='legend'>";
     let legend = document.getElementsByClassName('legend');
@@ -60,13 +68,18 @@ function generateLegend(){
         <p class='both'>FizzBuzz</p>
     `;
 }
+/**
+ * Function that activate arrows for carousel
+ */
 function activateCarousel(){
     let previousButton = document.getElementsByClassName('previous');
     let nextButton = document.getElementsByClassName('next');
     previousButton[0].addEventListener('click',previous);
     nextButton[0].addEventListener('click',next);
 }
-
+/**
+ * function that hide all numbers
+ */
 function hideAll(){
     let buzz = document.getElementsByClassName('buzz');
     let p = buzz[0].getElementsByTagName('p');
@@ -74,7 +87,9 @@ function hideAll(){
         p[i].classList.add('hide');
     }
 }
-
+/**
+ * function that get previous number in carousel
+ */
 function previous(){
     let buzz = document.getElementsByClassName('buzz');
     let p = buzz[0].getElementsByTagName('p');
@@ -84,6 +99,9 @@ function previous(){
         p[index].classList.remove('hide');
     }
 }
+/**
+ * function tha get next number in carousel
+ */
 function next(){
     let buzz = document.getElementsByClassName('buzz');
     let p = buzz[0].getElementsByTagName('p');
