@@ -65,3 +65,20 @@ footer{
     background: #783acb85;
     border-radius: 0 0 4em 4em;
 }
+/*Footer*/
+a{
+    color:white;
+    text-decoration: none;
+    padding:1em;
+    border-radius: 10px;
+    transition:1s color;
+}
+a:hover{
+    color:goldenrod;
+}
+footer a:nth-child(1){
+    background-color: #0e76a8;
+}
+footer a:nth-child(2){
+    background-color:#3b5998;
+}

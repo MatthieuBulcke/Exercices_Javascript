@@ -29,7 +29,6 @@ function getTime(){
 function audio(){
     let music = new Audio('./assets/audio/MI2.mp3');
     music.volume = .5;
-    music.loop = true;
     music.play();
 }
 /**
