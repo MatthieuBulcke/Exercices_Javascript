@@ -4,7 +4,7 @@ body{
     margin:0;
     font-family: sans-serif;
     height: 90vh;
-    background-color: rgb(82, 151, 125);
+    background-color: rgb(109, 172, 255);
     text-align: center;
 }
 main{
@@ -16,7 +16,7 @@ h1{
     padding: 1em;
     border-radius: 2em;
     background: #323ecd3d;
-    color: tomato;
+    color: rgb(86, 2, 195);
     width: fit-content;
 }
 ul{
@@ -24,9 +24,53 @@ ul{
     list-style:none;
 }
 footer{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     position: absolute;
     bottom: 0;
     background: royalblue;
     padding: 2em 0;
+}
+/*cardsSection*/
+.cardSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardSection article:nth-child(1){
+    padding: 1.5em 0px;
+}
+.cardSection article{
+    border: 1px solid green;
+    margin: 1em auto;
+    width: 40%;
+    border-radius: 1em;
+    height: fit-content;
+    cursor: pointer;
+}
+.cardSection article img{
+    width: 100%;
+    border-radius: 1em;
+    height: -webkit-fill-available;
+}
+.cardSection p{
+    position: relative;
+    /* top: 0; */
+    bottom: 2.4em;
+    margin-bottom: -2.4em;
+    color: white;
+    background: #783acb85;
+    border-radius: 0 0 4em 4em;
+}
+/*Rainbow*/
+.rainbow{
+    animation: animation 40s linear infinite;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background: linear-gradient(rgba(195, 34, 34, 1) 0%, rgba(195, 34, 83, 1) 5%, rgba(195, 34, 121, 1) 11%, rgba(195, 34, 189, 1) 17%, rgba(155, 34, 195, 1) 23%, rgba(96, 34, 195, 1) 28%, rgba(34, 43, 195, 1) 34%, rgba(34, 92, 195, 1) 40%, rgba(34, 151, 195, 1) 45%, rgba(34, 195, 174, 1) 51%, rgba(34, 195, 104, 1) 57%, rgba(46, 195, 34, 1) 62%, rgba(105, 195, 34, 1) 68%, rgba(165, 195, 34, 1) 73%, rgba(195, 182, 34, 1) 79%, rgba(195, 144, 34, 1) 85%, rgba(195, 109, 34, 1) 93%, rgba(195, 34, 34, 1) 100%);
+}
+@keyframes animation {
+    100% {
+        background-position: 0px -3000px;
+    }
 }
